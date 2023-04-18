@@ -10,3 +10,5 @@ DATABASE_URL=postgresql://postgres:postgres@0.0.0.0:5432/digital_land
 You might need to install univorn, a python web app runner.
 
 `univorn tipg.main:app`
+
+You might need to get it on ypath as well.
