@@ -1,0 +1,81 @@
+site_name: tipg
+site_description: Simple and Fast Geospatial OGC Features and Tiles API for PostGIS.
+
+docs_dir: 'src'
+site_dir: 'build'
+
+repo_name: "developmentseed/tipg"
+repo_url: "https://github.com/developmentseed/tipg"
+
+extra:
+  social:
+    - icon: "fontawesome/brands/github"
+      link: "https://github.com/developmentseed"
+    - icon: "fontawesome/brands/twitter"
+      link: "https://twitter.com/developmentseed"
+    - icon: "fontawesome/brands/medium"
+      link: "https://medium.com/devseed"
+
+nav:
+  - TiPg: "index.md"
+  - User Guide:
+    - "Endpoints documentation": endpoints.md
+    - "Endpoints Factories": advanced/factories.md
+    - "Configuration": advanced/configuration.md
+  - API:
+    - db: api/tipg/db.md
+    - dbmodel: api/tipg/dbmodel.md
+    - dependencies: api/tipg/dependencies.md
+    - errors: api/tipg/errors.md
+    - factory: api/tipg/factory.md
+    - middleware: api/tipg/middleware.md
+    - model: api/tipg/model.md
+    - settings: api/tipg/settings.md
+    - resources:
+      - enums: api/tipg/resources/enums.md
+      - response: api/tipg/resources/response.md
+    - filters:
+      - evaluate: api/tipg/filter/evaluate.md
+      - filters: api/tipg/filter/filters.md
+  - Development - Contributing: "contributing.md"
+  - Release Notes: "release-notes.md"
+  - Performance Benchmarks: benchmark.html
+
+plugins:
+  - search
+
+theme:
+  name: material
+  palette:
+    primary: indigo
+    scheme: default
+  favicon: img/favicon.ico
+  logo: img/logo.png
+
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - codehilite:
+      guess_lang: false
+  - def_list
+  - footnotes
+  - pymdownx.arithmatex
+  - pymdownx.betterem
+  - pymdownx.caret:
+      insert: false
+  - pymdownx.details
+  - pymdownx.emoji
+  - pymdownx.escapeall:
+      hardbreak: true
+      nbsp: true
+  - pymdownx.magiclink:
+      hide_protocol: true
+      repo_url_shortener: true
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - toc:
+      permalink: true
